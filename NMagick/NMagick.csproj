@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61CD4E8E-6A1F-4F3B-8FAE-A64EEF5E08A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>paracode.NMagick</RootNamespace>
+    <AssemblyName>NMagick</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreaGeometry.cs" />
+    <Compile Include="AspectGeometry.cs" />
+    <Compile Include="Channel.cs" />
+    <Compile Include="Colorspace.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="CompositeOperator.cs" />
+    <Compile Include="DrawContext.cs" />
+    <Compile Include="Geometry.cs" />
+    <Compile Include="ImageList.cs" />
+    <Compile Include="MagickImage.cs" />
+    <Compile Include="ParserBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClipPath.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="ImageInfo.cs" />
+    <Compile Include="Pattern.cs" />
+    <Compile Include="PercentGeometry.cs" />
+    <Compile Include="Quantum.cs" />
+    <Compile Include="Thrower.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClipPathCommandBuilder.java" />
+    <Content Include="ColorDatabase.java" />
+    <Content Include="CommandBuilder.java" />
+    <Content Include="CommandParser.java" />
+    <Content Include="DrawContext.java" />
+    <Content Include="DrawInfo.java" />
+    <Content Include="Effects\BasicEffect.java" />
+    <Content Include="Effects\BlurEffect.java" />
+    <Content Include="Effects\CharcoalEffect.java" />
+    <Content Include="Effects\ContrastStretchEffect.java" />
+    <Content Include="Effects\EdgeEffect.java" />
+    <Content Include="Effects\ImplodeEffect.java" />
+    <Content Include="Effects\NegateEffect.java" />
+    <Content Include="Effects\NormalizeEffect.java" />
+    <Content Include="Effects\ShadeEffect.java" />
+    <Content Include="Effects\SolarizeEffect.java" />
+    <Content Include="Effects\WaveEffect.java" />
+    <Content Include="GradientFill.java" />
+    <Compile Include="ColorDatabase.cs" />
+    <Compile Include="Gravity.cs" />
+    <Compile Include="GreaterGeometry.cs" />
+    <Content Include="ImageDatabase.java" />
+    <Compile Include="LessGeometry.cs" />
+    <Compile Include="PixelPacket.cs" />
+    <Compile Include="SpaceTransformation.cs" />
+    <Content Include="MagickImage.java" />
+    <Content Include="PathParser.java" />
+    <Content Include="StandardCommandBuilder.java" />
+    <Content Include="TextFormatter.java" />
+    <Content Include="TextureFill.java" />
+    <Content Include="TypeMetrics.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

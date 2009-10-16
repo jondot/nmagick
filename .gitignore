@@ -1,0 +1,33 @@
+# Shamelessly stolen from http://gist.github.com/114476
+# .gitignore for .NET projects
+ 
+# Standard VS.NET and ReSharper Foo
+obj
+bin
+*.csproj.user
+*ReSharper*
+*resharper*
+*.suo
+*.cache
+Thumbs.db
+ 
+# Other useful stuff
+*.bak
+*.cache
+*.log
+*.swp
+*.user
+_compareTemp
+_notes
+aspnet_client
+httpd.parse.errors
+ 
+# Office Temp Files
+~$*
+ 
+# If you have a deploy folder
+# deploy
+# deploy/*
+ 
+# Exclude ALL DLLs? (
+# *.dll
